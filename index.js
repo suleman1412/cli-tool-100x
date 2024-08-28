@@ -46,7 +46,7 @@ program.command('search')
     if (err) return err;
     else{
       const found = data.toLowerCase().includes(term.toLowerCase());
-      console.log(`The term "${term}" was ${found} in the file.`);
+      console.log(`The term "${term}" ${found ? 'is present' : 'is NOT present'} in the file.`);
     }
   })
 })
