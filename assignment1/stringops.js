@@ -2,8 +2,7 @@
 // Input - node index.js /Users/kirat/file.txt
 // Output - You have 10 words in this file
 const fs = require('fs');
-const { Command } = require('commander');
-const program = new Command();
+const program = require('commander');
 
 program
   .name('string ops')
